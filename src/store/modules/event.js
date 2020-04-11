@@ -1,5 +1,8 @@
 import EventService from '@/services/EventService.js'
 
+// option, to prevent naming conflicts, now should use event/***  in all dispatch calls
+export const namespaced = true
+
 export const state = {
     events: [],
     totalEvents: 0,
